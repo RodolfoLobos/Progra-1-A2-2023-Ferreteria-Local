@@ -1,0 +1,12 @@
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\bin\Debug\db_ferreteria.mdf
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\bin\Debug\db_ferreteria_log.ldf
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\bin\Debug\Ferreteria.exe.config
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\bin\Debug\Ferreteria.exe
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\bin\Debug\Ferreteria.pdb
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.csproj.AssemblyReference.cache
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.Form1.resources
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.Properties.Resources.resources
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.csproj.GenerateResource.cache
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.csproj.CoreCompileInputs.cache
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.exe
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.pdb
