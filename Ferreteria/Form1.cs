@@ -30,7 +30,7 @@ namespace Ferreteria
 
         private void mostrarProductos()
         {
-            grdDatosProductos.DataSource = miDs.Tables["Productos"].DefaultView;
+            productosDataGridView.DataSource = miDs.Tables["Productos"].DefaultView;
         } 
 
         private void mostrarDatosProductos()
@@ -65,7 +65,8 @@ namespace Ferreteria
 
         private void btnPrimeroProducto_Click(object sender, EventArgs e)
         {
-
+            posicion = 0;
+            mostrarDatosProductos();
         }
 
         private void btnSiguienteProducto_Click(object sender, EventArgs e)
@@ -85,6 +86,7 @@ namespace Ferreteria
         private void btnUltimoProducto_Click(object sender, EventArgs e)
         {
             posicion = miDs.Tables["Productos"].Rows.Count -1 ;
+            mostrarDatosProductos();
         }
 
         private void btnAnteriorProducto_Click(object sender, EventArgs e)
@@ -99,6 +101,38 @@ namespace Ferreteria
 
         }
             }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+         
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form2 formulario = new Form2();
+            formulario.Visible = true;
+            Visible = false;
+             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form3 formulario = new Form3();
+            formulario.Visible = true;
+            Visible = false;
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            Form1 formulario = new Form1();
+            formulario.Visible = true;
+            Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 
