@@ -486,6 +486,7 @@ namespace Ferreteria {
                 base.Columns.Add(this.columnEstado_Producto);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIdProdcuto}, true));
+                this.columnIdProdcuto.AutoIncrementSeed = 1;
                 this.columnIdProdcuto.AllowDBNull = false;
                 this.columnIdProdcuto.Unique = true;
                 this.columnProveedor.MaxLength = 20;

@@ -39,5 +39,30 @@ namespace Ferreteria
             formulario.Visible = true;
             Visible = false;
         }
+
+        private void productosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.productosBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.db_ferreteriaDataSet);
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'db_ferreteriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
+          
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

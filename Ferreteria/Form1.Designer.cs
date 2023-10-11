@@ -52,10 +52,12 @@
             this.btnUltimoProducto = new System.Windows.Forms.Button();
             this.lblRegistroProducto = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnModificarProducto = new System.Windows.Forms.Button();
+            this.btnNuevoProducto = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -64,8 +66,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.productosTableAdapter = new Ferreteria.db_ferreteriaDataSetTableAdapters.ProductosTableAdapter();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.productosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new Ferreteria.db_ferreteriaDataSetTableAdapters.TableAdapterManager();
             this.productosDataGridView = new System.Windows.Forms.DataGridView();
@@ -80,12 +80,12 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbferreteriaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -304,8 +304,8 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.btnModificarProducto);
+            this.groupBox3.Controls.Add(this.btnNuevoProducto);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(487, 573);
@@ -315,27 +315,40 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Edición";
             // 
-            // button7
+            // button1
             // 
-            this.button7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button7.Location = new System.Drawing.Point(143, 35);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(135, 47);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Modificar ";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(490, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 47);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button5
+            // btnModificarProducto
             // 
-            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button5.Location = new System.Drawing.Point(6, 35);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 47);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Agregar ";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnModificarProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarProducto.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnModificarProducto.Location = new System.Drawing.Point(143, 35);
+            this.btnModificarProducto.Name = "btnModificarProducto";
+            this.btnModificarProducto.Size = new System.Drawing.Size(135, 47);
+            this.btnModificarProducto.TabIndex = 5;
+            this.btnModificarProducto.Text = "Modificar ";
+            this.btnModificarProducto.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevoProducto
+            // 
+            this.btnNuevoProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoProducto.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnNuevoProducto.Location = new System.Drawing.Point(6, 35);
+            this.btnNuevoProducto.Name = "btnNuevoProducto";
+            this.btnNuevoProducto.Size = new System.Drawing.Size(115, 47);
+            this.btnNuevoProducto.TabIndex = 3;
+            this.btnNuevoProducto.Text = "Nuevo";
+            this.btnNuevoProducto.UseVisualStyleBackColor = true;
+            this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
             // button6
             // 
@@ -358,6 +371,17 @@
             this.groupBox4.Size = new System.Drawing.Size(319, 100);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(109, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 92);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -416,28 +440,6 @@
             // productosTableAdapter
             // 
             this.productosTableAdapter.ClearBeforeFill = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(109, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 92);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(490, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // productosBindingSource1
             // 
@@ -547,12 +549,12 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbferreteriaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -581,8 +583,8 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnModificarProducto;
+        private System.Windows.Forms.Button btnNuevoProducto;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
