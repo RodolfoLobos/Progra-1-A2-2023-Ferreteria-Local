@@ -34,25 +34,25 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIdAgregar = new System.Windows.Forms.TextBox();
+            this.txtStokAgregar = new System.Windows.Forms.TextBox();
+            this.txtProveedorAgregar = new System.Windows.Forms.TextBox();
+            this.txtNombreAgregar = new System.Windows.Forms.TextBox();
+            this.txtPrecioAgregar = new System.Windows.Forms.TextBox();
+            this.txtEstadoAgregar = new System.Windows.Forms.TextBox();
+            this.txtCategoriaAgregar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnNuevoProducto = new System.Windows.Forms.Button();
+            this.btnCancelarProducto = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,14 +108,14 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtIdAgregar);
+            this.groupBox2.Controls.Add(this.txtStokAgregar);
+            this.groupBox2.Controls.Add(this.txtProveedorAgregar);
+            this.groupBox2.Controls.Add(this.txtNombreAgregar);
+            this.groupBox2.Controls.Add(this.txtPrecioAgregar);
+            this.groupBox2.Controls.Add(this.txtEstadoAgregar);
+            this.groupBox2.Controls.Add(this.txtCategoriaAgregar);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
@@ -130,53 +130,61 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar Productos";
             // 
-            // textBox7
+            // txtIdAgregar
             // 
-            this.textBox7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(172, 257);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(458, 35);
-            this.textBox7.TabIndex = 13;
+            this.txtIdAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdAgregar.Location = new System.Drawing.Point(172, 45);
+            this.txtIdAgregar.Name = "txtIdAgregar";
+            this.txtIdAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtIdAgregar.TabIndex = 21;
             // 
-            // textBox6
+            // txtStokAgregar
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(172, 91);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(458, 35);
-            this.textBox6.TabIndex = 20;
+            this.txtStokAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStokAgregar.Location = new System.Drawing.Point(172, 257);
+            this.txtStokAgregar.Name = "txtStokAgregar";
+            this.txtStokAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtStokAgregar.TabIndex = 13;
             // 
-            // textBox5
+            // txtProveedorAgregar
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(172, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(458, 35);
-            this.textBox5.TabIndex = 19;
+            this.txtProveedorAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProveedorAgregar.Location = new System.Drawing.Point(172, 91);
+            this.txtProveedorAgregar.Name = "txtProveedorAgregar";
+            this.txtProveedorAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtProveedorAgregar.TabIndex = 20;
             // 
-            // textBox4
+            // txtNombreAgregar
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(172, 200);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(458, 35);
-            this.textBox4.TabIndex = 18;
+            this.txtNombreAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreAgregar.Location = new System.Drawing.Point(172, 143);
+            this.txtNombreAgregar.Name = "txtNombreAgregar";
+            this.txtNombreAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtNombreAgregar.TabIndex = 19;
             // 
-            // textBox3
+            // txtPrecioAgregar
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(172, 392);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(458, 35);
-            this.textBox3.TabIndex = 17;
+            this.txtPrecioAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioAgregar.Location = new System.Drawing.Point(172, 200);
+            this.txtPrecioAgregar.Name = "txtPrecioAgregar";
+            this.txtPrecioAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtPrecioAgregar.TabIndex = 18;
             // 
-            // textBox2
+            // txtEstadoAgregar
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(172, 326);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(458, 35);
-            this.textBox2.TabIndex = 16;
+            this.txtEstadoAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstadoAgregar.Location = new System.Drawing.Point(172, 392);
+            this.txtEstadoAgregar.Name = "txtEstadoAgregar";
+            this.txtEstadoAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtEstadoAgregar.TabIndex = 17;
+            // 
+            // txtCategoriaAgregar
+            // 
+            this.txtCategoriaAgregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoriaAgregar.Location = new System.Drawing.Point(172, 326);
+            this.txtCategoriaAgregar.Name = "txtCategoriaAgregar";
+            this.txtCategoriaAgregar.Size = new System.Drawing.Size(458, 35);
+            this.txtCategoriaAgregar.TabIndex = 16;
             // 
             // label8
             // 
@@ -186,15 +194,6 @@
             this.label8.Size = new System.Drawing.Size(100, 29);
             this.label8.TabIndex = 15;
             this.label8.Text = "Estado:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(173, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 35);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
             // 
@@ -250,16 +249,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
-            // button7
+            // btnAgregarProducto
             // 
-            this.button7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button7.Location = new System.Drawing.Point(172, 35);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(135, 47);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Agregar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(172, 35);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(135, 47);
+            this.btnAgregarProducto.TabIndex = 6;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // button6
             // 
@@ -281,34 +281,35 @@
             this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 12;
             // 
-            // button1
+            // btnNuevoProducto
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button1.Location = new System.Drawing.Point(12, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 47);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevoProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoProducto.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnNuevoProducto.Location = new System.Drawing.Point(12, 35);
+            this.btnNuevoProducto.Name = "btnNuevoProducto";
+            this.btnNuevoProducto.Size = new System.Drawing.Size(135, 47);
+            this.btnNuevoProducto.TabIndex = 13;
+            this.btnNuevoProducto.Text = "Nuevo";
+            this.btnNuevoProducto.UseVisualStyleBackColor = true;
+            this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
-            // button3
+            // btnCancelarProducto
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button3.Location = new System.Drawing.Point(332, 35);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 47);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancelarProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarProducto.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnCancelarProducto.Location = new System.Drawing.Point(332, 35);
+            this.btnCancelarProducto.Name = "btnCancelarProducto";
+            this.btnCancelarProducto.Size = new System.Drawing.Size(135, 47);
+            this.btnCancelarProducto.TabIndex = 15;
+            this.btnCancelarProducto.Text = "Cancelar";
+            this.btnCancelarProducto.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btnNuevoProducto);
             this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.btnAgregarProducto);
+            this.groupBox3.Controls.Add(this.btnCancelarProducto);
             this.groupBox3.Location = new System.Drawing.Point(18, 548);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(648, 100);
@@ -345,7 +346,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
@@ -353,17 +354,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtStokAgregar;
+        private System.Windows.Forms.TextBox txtProveedorAgregar;
+        private System.Windows.Forms.TextBox txtNombreAgregar;
+        private System.Windows.Forms.TextBox txtPrecioAgregar;
+        private System.Windows.Forms.TextBox txtEstadoAgregar;
+        private System.Windows.Forms.TextBox txtCategoriaAgregar;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnNuevoProducto;
+        private System.Windows.Forms.Button btnCancelarProducto;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtIdAgregar;
     }
 }

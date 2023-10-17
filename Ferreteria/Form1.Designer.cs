@@ -31,20 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtStok = new System.Windows.Forms.TextBox();
-            this.txtProveedor = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnPrimeroProducto = new System.Windows.Forms.Button();
             this.btnAnteriorProducto = new System.Windows.Forms.Button();
@@ -55,7 +42,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnModificarProducto = new System.Windows.Forms.Button();
             this.btnNuevoProducto = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnEliminarProducto = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -64,18 +51,33 @@
             this.dbferreteriaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.db_ferreteriaDataSet = new Ferreteria.db_ferreteriaDataSet();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtBuscarProducto = new System.Windows.Forms.TextBox();
             this.productosTableAdapter = new Ferreteria.db_ferreteriaDataSetTableAdapters.ProductosTableAdapter();
             this.productosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new Ferreteria.db_ferreteriaDataSetTableAdapters.TableAdapterManager();
-            this.productosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.db_ferreteriaDataSet1 = new Ferreteria.db_ferreteriaDataSet();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtStok = new System.Windows.Forms.TextBox();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoría = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grdDatosProductos = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,7 +89,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbferreteriaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -114,55 +118,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modificar Productos";
             // 
-            // txtStok
-            // 
-            this.txtStok.Location = new System.Drawing.Point(121, 257);
-            this.txtStok.Name = "txtStok";
-            this.txtStok.Size = new System.Drawing.Size(170, 35);
-            this.txtStok.TabIndex = 13;
-            // 
-            // txtProveedor
-            // 
-            this.txtProveedor.Location = new System.Drawing.Point(121, 82);
-            this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(170, 35);
-            this.txtProveedor.TabIndex = 17;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(121, 140);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(170, 35);
-            this.txtNombre.TabIndex = 16;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(121, 389);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(170, 35);
-            this.txtEstado.TabIndex = 15;
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(121, 322);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(170, 35);
-            this.txtCategoria.TabIndex = 14;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(121, 197);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(170, 35);
-            this.txtPrecio.TabIndex = 13;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(121, 34);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(170, 35);
-            this.txtId.TabIndex = 12;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -172,66 +127,6 @@
             this.label3.Size = new System.Drawing.Size(71, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "Estado:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 322);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 21);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Categoria:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 257);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 21);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Stok:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 197);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 21);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Precio:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 140);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 21);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Nombre:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 82);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 21);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Proveedor:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 34);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 21);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "ID:";
             // 
             // groupBox2
             // 
@@ -306,7 +201,7 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.btnModificarProducto);
             this.groupBox3.Controls.Add(this.btnNuevoProducto);
-            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.btnEliminarProducto);
             this.groupBox3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(487, 573);
             this.groupBox3.Name = "groupBox3";
@@ -350,16 +245,17 @@
             this.btnNuevoProducto.UseVisualStyleBackColor = true;
             this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
-            // button6
+            // btnEliminarProducto
             // 
-            this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button6.Location = new System.Drawing.Point(332, 35);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(135, 47);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Eliminar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEliminarProducto.Location = new System.Drawing.Point(332, 35);
+            this.btnEliminarProducto.Name = "btnEliminarProducto";
+            this.btnEliminarProducto.Size = new System.Drawing.Size(135, 47);
+            this.btnEliminarProducto.TabIndex = 4;
+            this.btnEliminarProducto.Text = "Eliminar";
+            this.btnEliminarProducto.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
             // 
             // groupBox4
             // 
@@ -430,12 +326,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Buscar:";
             // 
-            // textBox1
+            // TxtBuscarProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(449, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(667, 26);
-            this.textBox1.TabIndex = 6;
+            this.TxtBuscarProducto.Location = new System.Drawing.Point(449, 77);
+            this.TxtBuscarProducto.Name = "TxtBuscarProducto";
+            this.TxtBuscarProducto.Size = new System.Drawing.Size(667, 26);
+            this.TxtBuscarProducto.TabIndex = 6;
             // 
             // productosTableAdapter
             // 
@@ -452,89 +348,200 @@
             this.tableAdapterManager.ProductosTableAdapter = this.productosTableAdapter;
             this.tableAdapterManager.UpdateOrder = Ferreteria.db_ferreteriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // productosDataGridView
+            // productosBindingSource2
             // 
-            this.productosDataGridView.AutoGenerateColumns = false;
-            this.productosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.productosDataGridView.DataSource = this.productosBindingSource1;
-            this.productosDataGridView.Location = new System.Drawing.Point(347, 122);
-            this.productosDataGridView.Name = "productosDataGridView";
-            this.productosDataGridView.RowHeadersWidth = 62;
-            this.productosDataGridView.RowTemplate.Height = 28;
-            this.productosDataGridView.Size = new System.Drawing.Size(771, 445);
-            this.productosDataGridView.TabIndex = 6;
+            this.productosBindingSource2.DataMember = "Productos";
+            this.productosBindingSource2.DataSource = this.dbferreteriaDataSetBindingSource;
             // 
-            // dataGridViewTextBoxColumn1
+            // db_ferreteriaDataSet1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdProdcuto";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdProdcuto";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 150;
+            this.db_ferreteriaDataSet1.DataSetName = "db_ferreteriaDataSet";
+            this.db_ferreteriaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridViewTextBoxColumn2
+            // label9
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Proveedor";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Proveedor";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 21);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "ID:";
             // 
-            // dataGridViewTextBoxColumn3
+            // txtId
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombre";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
+            this.txtId.Location = new System.Drawing.Point(121, 34);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(170, 35);
+            this.txtId.TabIndex = 12;
             // 
-            // dataGridViewTextBoxColumn4
+            // label5
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Precio_Producto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Precio_Producto";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 150;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 257);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 21);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Stok:";
             // 
-            // dataGridViewTextBoxColumn5
+            // label8
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Stok_Producto";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Stok_Producto";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 150;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 82);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 21);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Proveedor:";
             // 
-            // dataGridViewTextBoxColumn6
+            // label7
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id_Categoría";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Id_Categoría";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 150;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 140);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 21);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Nombre:";
             // 
-            // dataGridViewTextBoxColumn7
+            // label6
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Estado_Producto";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Estado_Producto";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 150;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 197);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 21);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Precio:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 322);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Categoria:";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(121, 197);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(170, 35);
+            this.txtPrecio.TabIndex = 13;
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Location = new System.Drawing.Point(121, 322);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(170, 35);
+            this.txtCategoria.TabIndex = 14;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(121, 140);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(170, 35);
+            this.txtNombre.TabIndex = 16;
+            // 
+            // txtStok
+            // 
+            this.txtStok.Location = new System.Drawing.Point(121, 257);
+            this.txtStok.Name = "txtStok";
+            this.txtStok.Size = new System.Drawing.Size(170, 35);
+            this.txtStok.TabIndex = 13;
+            // 
+            // txtProveedor
+            // 
+            this.txtProveedor.Location = new System.Drawing.Point(121, 82);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(170, 35);
+            this.txtProveedor.TabIndex = 17;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(121, 389);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(170, 35);
+            this.txtEstado.TabIndex = 15;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 8;
+            this.Estado.Name = "Estado";
+            this.Estado.Width = 150;
+            // 
+            // Categoría
+            // 
+            this.Categoría.HeaderText = "Categoría";
+            this.Categoría.MinimumWidth = 8;
+            this.Categoría.Name = "Categoría";
+            this.Categoría.Width = 150;
+            // 
+            // Stok
+            // 
+            this.Stok.HeaderText = "Stok";
+            this.Stok.MinimumWidth = 8;
+            this.Stok.Name = "Stok";
+            this.Stok.Width = 150;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 8;
+            this.Precio.Name = "Precio";
+            this.Precio.Width = 150;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre ";
+            this.Nombre.MinimumWidth = 8;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 150;
+            // 
+            // Proveedor
+            // 
+            this.Proveedor.HeaderText = "Proveedor";
+            this.Proveedor.MinimumWidth = 8;
+            this.Proveedor.Name = "Proveedor";
+            this.Proveedor.Width = 150;
+            // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "IdProducto";
+            this.IdProducto.MinimumWidth = 8;
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.Width = 150;
+            // 
+            // grdDatosProductos
+            // 
+            this.grdDatosProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDatosProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdProducto,
+            this.Proveedor,
+            this.Nombre,
+            this.Precio,
+            this.Stok,
+            this.Categoría,
+            this.Estado});
+            this.grdDatosProductos.Location = new System.Drawing.Point(337, 122);
+            this.grdDatosProductos.Name = "grdDatosProductos";
+            this.grdDatosProductos.RowHeadersWidth = 62;
+            this.grdDatosProductos.RowTemplate.Height = 28;
+            this.grdDatosProductos.Size = new System.Drawing.Size(781, 445);
+            this.grdDatosProductos.TabIndex = 7;
+            this.grdDatosProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosProductos_CellContentClick_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 713);
-            this.Controls.Add(this.productosDataGridView);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.grdDatosProductos);
+            this.Controls.Add(this.TxtBuscarProducto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -556,7 +563,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbferreteriaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ferreteriaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -568,31 +577,18 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnUltimoProducto;
         private System.Windows.Forms.Label lblRegistroProducto;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtStok;
-        private System.Windows.Forms.TextBox txtProveedor;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtCategoria;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnModificarProducto;
         private System.Windows.Forms.Button btnNuevoProducto;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnEliminarProducto;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.BindingSource dbferreteriaDataSetBindingSource;
         private db_ferreteriaDataSet db_ferreteriaDataSet;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtBuscarProducto;
         private System.Windows.Forms.Button btnSiguienteProducto;
         private System.Windows.Forms.Button btnAnteriorProducto;
         private System.Windows.Forms.Button btnPrimeroProducto;
@@ -602,14 +598,29 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource productosBindingSource1;
         private db_ferreteriaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView productosDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.BindingSource productosBindingSource2;
+        private db_ferreteriaDataSet db_ferreteriaDataSet1;
+        private System.Windows.Forms.TextBox txtStok;
+        private System.Windows.Forms.TextBox txtProveedor;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoría;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
+        private System.Windows.Forms.DataGridView grdDatosProductos;
     }
 }
 

@@ -12,3 +12,4 @@ C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria
 C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.pdb
 C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.Form2.resources
 C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.Form3.resources
+C:\Users\rodolfo lovoz\source\repos\Progra-1-A2-2023-Ferreteria-Local\Ferreteria\obj\Debug\Ferreteria.Form4.resources

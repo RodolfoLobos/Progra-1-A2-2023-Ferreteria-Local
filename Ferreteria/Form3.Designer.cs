@@ -41,21 +41,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtVentas = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txtFactura = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -170,45 +170,45 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ventas Productos";
             // 
-            // label2
+            // txtProducto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 419);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Precio:";
+            this.txtProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProducto.Location = new System.Drawing.Point(218, 126);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(379, 35);
+            this.txtProducto.TabIndex = 12;
             // 
-            // label3
+            // txtPrecio
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 344);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 29);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Fecha_De_Venta:";
+            this.txtPrecio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(221, 419);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(376, 35);
+            this.txtPrecio.TabIndex = 11;
             // 
-            // label4
+            // txtFecha
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 278);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 29);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Cantidad:";
+            this.txtFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha.Location = new System.Drawing.Point(221, 344);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(376, 35);
+            this.txtFecha.TabIndex = 10;
             // 
-            // label5
+            // txtFactura
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 29);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Factura:";
+            this.txtFactura.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFactura.Location = new System.Drawing.Point(218, 200);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(379, 35);
+            this.txtFactura.TabIndex = 9;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(218, 278);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(379, 35);
+            this.txtCantidad.TabIndex = 8;
             // 
             // label6
             // 
@@ -220,45 +220,45 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "ID_Producto:";
             // 
-            // txtCantidad
+            // label5
             // 
-            this.txtCantidad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(218, 278);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(379, 35);
-            this.txtCantidad.TabIndex = 8;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 206);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 29);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Factura:";
             // 
-            // txtFactura
+            // label4
             // 
-            this.txtFactura.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFactura.Location = new System.Drawing.Point(218, 200);
-            this.txtFactura.Name = "txtFactura";
-            this.txtFactura.Size = new System.Drawing.Size(379, 35);
-            this.txtFactura.TabIndex = 9;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 278);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 29);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Cantidad:";
             // 
-            // txtFecha
+            // label3
             // 
-            this.txtFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(221, 344);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(376, 35);
-            this.txtFecha.TabIndex = 10;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 344);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 29);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Fecha_De_Venta:";
             // 
-            // txtPrecio
+            // label2
             // 
-            this.txtPrecio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(221, 419);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(376, 35);
-            this.txtPrecio.TabIndex = 11;
-            // 
-            // txtProducto
-            // 
-            this.txtProducto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProducto.Location = new System.Drawing.Point(218, 126);
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(379, 35);
-            this.txtProducto.TabIndex = 12;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 419);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Precio:";
             // 
             // groupBox3
             // 
@@ -271,6 +271,29 @@
             this.groupBox3.Size = new System.Drawing.Size(617, 100);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnSalir.Location = new System.Drawing.Point(475, 25);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(135, 47);
+            this.BtnSalir.TabIndex = 18;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button3.Location = new System.Drawing.Point(5, 25);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(135, 47);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Nuevo";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -294,34 +317,11 @@
             this.button2.Text = "Agregar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button3.Location = new System.Drawing.Point(5, 25);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 47);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Nuevo";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnSalir.Location = new System.Drawing.Point(475, 25);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(135, 47);
-            this.BtnSalir.TabIndex = 18;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.UseVisualStyleBackColor = true;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 678);
+            this.ClientSize = new System.Drawing.Size(1131, 696);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

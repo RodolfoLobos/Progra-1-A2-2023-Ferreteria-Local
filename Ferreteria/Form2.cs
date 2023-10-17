@@ -10,8 +10,18 @@ using System.Windows.Forms;
 
 namespace Ferreteria
 {
+
     public partial class Form2 : Form
     {
+        Form2 agregar = new Form2();
+        private string Id;
+        private string pproveedor;
+        private string nNombre;
+        private string Pprecio;
+        private string SStok;
+        private string ICategoria;
+        public string eEstado;
+
         public Form2()
         {
             InitializeComponent();
@@ -38,14 +48,31 @@ namespace Ferreteria
             Visible = false;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button6_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        private void btnNuevoProducto_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            agregar.Id = txtIdAgregar.Text;
+            agregar.pproveedor = txtProveedorAgregar.Text;
+            agregar.nNombre = txtNombreAgregar.Text;
+            agregar.Pprecio = txtPrecioAgregar.Text;
+            agregar.SStok = txtStokAgregar.Text;
+            agregar.ICategoria = txtCategoriaAgregar.Text;
+            agregar.eEstado = txtEstadoAgregar.Text;
+
+            agregar.Show();
+        }
     }
-}
+    }
+

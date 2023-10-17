@@ -17,11 +17,73 @@ namespace Ferreteria
         public int posicion = 0;
         String accion = "nuevo";
 
+        private String Id, proveedor, nombre, precio, stok, Categoria, estado;
+
+        public String pId
+        {
+            set
+            {
+                Id = value;
+            }
+        }
+
+        public String pproveedor
+        {
+            set
+            {
+                proveedor = value;
+            }
+        }
+
+        public String nNombre
+        {
+            set
+            {
+                nombre = value;
+            }
+        }
+
+        public String Pprecio
+        {
+            set
+            {
+                precio = value;
+            }
+        }
+
+        public String SStok
+        {
+            set
+            {
+                stok = value;
+            }
+        }
+
+        public String ICategoria
+        {
+            set
+            {
+                Categoria = value;
+            }
+        }
+
+        public String eEstado
+        {
+            set
+            {
+                estado = value;
+            }
+        }
         public Form1()
         {
             InitializeComponent();
         }
         private void form1_load(object sender, EventArgs e)
+        {
+            actualizarDs();
+        }
+
+        private void actualizarDs ()
         {
             miDs.Clear();
             miDs = objConexion.obtenerDatos();
@@ -30,20 +92,12 @@ namespace Ferreteria
 
         private void mostrarProductos()
         {
-            productosDataGridView.DataSource = miDs.Tables["Productos"].DefaultView;
+            grdDatosProductos.DataSource = miDs.Tables["Productos"].DefaultView;
         } 
 
         private void mostrarDatosProductos()
         {
-            txtId.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[1].ToString();
-            txtProveedor.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[2].ToString();
-            txtNombre.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[3].ToString();
-            txtPrecio.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[4].ToString();
-            txtStok.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[5].ToString();
-            txtCategoria.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[6].ToString();
-            txtEstado.Text = miDs.Tables["Productos"].Rows[posicion].ItemArray[7].ToString();
-
-            lblRegistroProducto.Text = (posicion + 1) + " de " + (miDs.Tables["Productos"].Rows.Count - 1);
+      
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -136,14 +190,68 @@ namespace Ferreteria
 
         private void btnNuevoProducto_Click(object sender, EventArgs e)
         {
-            
+            if (btnNuevoProducto.Text == "Nuevo")
+            {
+                btnNuevoProducto.Text = "Guardar";
+                btnModificarProducto.Text = "Cancelar";
+                estadoControles(false);
+                limpiarCajas();
+                accion = "Nuevo";
             }
+            else
+            {
+                String[] Productos = new string[]{
+        accion, txtId.Text, txtProveedor.Text, txtNombre.Text, txtPrecio.Text, txtStok.Text, txtCategoria.Text, txtEstado.Text,
+        miDs.Tables["Productos"].Rows[posicion].ItemArray[0].ToString()
+    };
+                String msg = objConexion.mtoProductos(Productos);
+                actualizarDs();
+                MessageBox.Show(msg);
+                estadoControles(true);
+                btnNuevoProducto.Text = "Nuevo";
+                btnModificarProducto.Text = "Modificar";
+            }
+            }
+            private void estadoControles(Boolean estado)
+        {
+            txtId.ReadOnly = estado;
+            txtProveedor.ReadOnly = estado;
+            txtNombre.ReadOnly = estado;
+            txtPrecio.ReadOnly  = estado;
+            txtStok.ReadOnly = estado;
+            txtCategoria.ReadOnly = estado;
+            txtEstado.ReadOnly = estado;
 
+            grdDatosProductos.Enabled = estado;
+            btnEliminarProducto.Enabled = estado;
+            TxtBuscarProducto.ReadOnly = !estado;
+        }
+        private void limpiarCajas()
+        {
+            
+        }
         private void button1_Click_1(object sender, EventArgs e)
         {
             Close();
         }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtProveedor.Text = "";
+            txtNombre.Text = "";
+            txtPrecio.Text = "";
+            txtStok.Text = "";
+            txtCategoria.Text = "";
+            txtEstado.Text = "";
+        }
+
+        private void grdDatosProductos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     }
+    
     
 
